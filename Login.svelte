@@ -2,6 +2,8 @@
   import { Accounts } from "meteor/accounts-base";
   import { Meteor } from "meteor/meteor";
 
+  export let heading = "Login";
+
   let email = "";
   let password = "";
 
@@ -10,7 +12,7 @@
   }
 </script>
 
-<h3>Login</h3>
+<h3>{heading}</h3>
 
 <form on:submit|preventDefault={onSubmit}>
   <div>

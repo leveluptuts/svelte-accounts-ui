@@ -1,5 +1,9 @@
 # leveluptuts:svelte-accounts-ui
 
+> A word or warning. This is super rough rn. I'm publishing to allow for community involvement and to get feedback. That said... it's totally usable.
+
+> Currently email & password is the only supported means of logging in.
+
 ## Basic
 
 ```js
@@ -36,3 +40,5 @@ import { Signup } from 'leveluptutorials:svelte-accounts-ui'
 - Default window view
 - Style Wrapper Component
 - Text as props
+- Oauth Services
+- 😅 Long way to go huh?

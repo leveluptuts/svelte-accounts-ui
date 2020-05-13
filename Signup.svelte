@@ -1,9 +1,13 @@
 <script>
   import { Accounts } from "meteor/accounts-base";
+  // Props
+  export let heading = "Login";
 
+  // State
   let email = "";
   let password = "";
 
+  // Actions
   function onSubmit() {
     Accounts.createUser({
       password,
@@ -12,7 +16,7 @@
   }
 </script>
 
-<h3>Create User</h3>
+<h3>{heading}</h3>
 
 <form on:submit|preventDefault={onSubmit}>
   <div>
