@@ -18,18 +18,12 @@ import { LoginWindow } from 'leveluptutorials:svelte-accounts-ui'
 
 ```js
 <script>
-import { Login } from 'leveluptutorials:svelte-accounts-ui'
+import { Login, Signup, Logout } from 'leveluptutorials:svelte-accounts-ui'
 </script>
 
+<Signup heading="Create User" />
 <Login />
-```
-
-```js
-<script>
-import { Signup } from 'leveluptutorials:svelte-accounts-ui'
-</script>
-
-<Signup />
+<Logout />
 ```
 
 ### Todo
