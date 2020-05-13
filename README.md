@@ -1,11 +1,31 @@
 # leveluptuts:svelte-accounts-ui
 
+## Basic
+
 ```js
 <script>
-import { LoginWindow } from 'leveluptuts:svelte-accounts-ui'
+import { LoginWindow } from 'leveluptutorials:svelte-accounts-ui'
 </script>
 
 <LoginWindow />
+```
+
+## You can also
+
+```js
+<script>
+import { Login } from 'leveluptutorials:svelte-accounts-ui'
+</script>
+
+<Login />
+```
+
+```js
+<script>
+import { Signup } from 'leveluptutorials:svelte-accounts-ui'
+</script>
+
+<Signup />
 ```
 
 ### Todo
@@ -13,5 +33,6 @@ import { LoginWindow } from 'leveluptuts:svelte-accounts-ui'
 - Reset Password
 - Forgot Password Link
 - Config options
-  _ Default window view
-  _ Style Wrapper Component \* Text as props
+- Default window view
+- Style Wrapper Component
+- Text as props
