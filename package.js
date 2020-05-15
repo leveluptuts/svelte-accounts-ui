@@ -1,6 +1,6 @@
 Package.describe({
-  name: "leveluptutorials:svelte-accounts-ui",
-  version: "0.0.3",
+  name: "levelup:svelte-accounts-ui",
+  version: "0.0.4",
   summary: "The simplicity of Blaze drop in ui, but in Svelte",
   // URL to the Git repository containing the source code for this package.
   git: "https://github.com/leveluptuts/svelte-accounts-ui",
