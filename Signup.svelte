@@ -1,5 +1,7 @@
 <script>
   import { Accounts } from "meteor/accounts-base";
+  import { error } from "./state";
+
   // Props
   export let heading = "Login";
 
@@ -9,10 +11,20 @@
 
   // Actions
   function onSubmit() {
-    Accounts.createUser({
-      password,
-      email
-    });
+    Accounts.createUser(
+      {
+        password,
+        email
+      },
+      err => {
+        if (!err) {
+          isSent = true;
+          email = "";
+          return;
+        }
+        error.set(err.reason);
+      }
+    );
   }
 </script>
 

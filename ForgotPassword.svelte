@@ -3,20 +3,25 @@
   import { Meteor } from "meteor/meteor";
   import { error } from "./state";
 
-  export let heading = "Login";
+  export let heading = "Forgot Password";
 
   let email = "";
-  let password = "";
+  let isSent = false;
 
   function onSubmit() {
-    Meteor.loginWithPassword(email, password, err => {
-      if (!err) {
-        isSent = true;
-        email = "";
-        return;
+    Accounts.forgotPassword(
+      {
+        email
+      },
+      err => {
+        if (!err) {
+          isSent = true;
+          email = "";
+          return;
+        }
+        error.set(err.reason);
       }
-      error.set(err.reason);
-    });
+    );
   }
 </script>
 
@@ -29,11 +34,5 @@
       <input placeholder="test@yo.com" type="email" bind:value={email} />
     </label>
   </div>
-  <div>
-    <label>
-      Password
-      <input placeholder="1234" type="password" bind:value={password} />
-    </label>
-  </div>
-  <button>Login</button>
+  <button>Send Request</button>
 </form>
