@@ -1,6 +1,6 @@
 <script>
-  import { Accounts } from "meteor/accounts-base";
-  import { Meteor } from "meteor/meteor";
+  // import { Accounts } from "meteor/accounts-base";
+  // import { Meteor } from "meteor/meteor";
   import { error } from "./state";
 
   export let heading = "Login";

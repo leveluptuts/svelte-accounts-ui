@@ -1,5 +1,5 @@
 <script>
-  import { Accounts } from "meteor/accounts-base";
+  // import { Accounts } from "meteor/accounts-base";
   import { error } from "./state";
 
   // Props

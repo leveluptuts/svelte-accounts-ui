@@ -1,5 +1,5 @@
 <script>
-  import { Meteor } from "meteor/meteor";
+  // import { Meteor } from "meteor/meteor";
 
   let text = "Logout";
 </script>

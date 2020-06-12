@@ -1,4 +1,4 @@
-# leveluptuts:svelte-accounts-ui
+# levelup:svelte-accounts-ui
 
 > A word or warning. This is super rough rn. I'm publishing to allow for community involvement and to get feedback. That said... it's totally usable.
 
@@ -8,7 +8,7 @@
 
 ```js
 <script>
-import { LoginWindow } from 'leveluptutorials:svelte-accounts-ui'
+import { LoginWindow } from 'levelup:svelte-accounts-ui'
 </script>
 
 <LoginWindow />
@@ -18,7 +18,7 @@ import { LoginWindow } from 'leveluptutorials:svelte-accounts-ui'
 
 ```js
 <script>
-import { Login, Signup, Logout } from 'leveluptutorials:svelte-accounts-ui'
+import { Login, Signup, Logout } from 'levelup:svelte-accounts-ui'
 </script>
 
 <Signup heading="Create User" />
