@@ -10,7 +10,7 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.use("ecmascript");
+  api.use("ecmascript@0.14.3");
   api.use("svelte:compiler@3.16.4_1");
   api.use("accounts-base@1.6.0");
   api.use("accounts-password@1.6.0");
