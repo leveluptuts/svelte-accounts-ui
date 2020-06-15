@@ -8,7 +8,7 @@
 
 ```js
 <script>
-import { LoginWindow } from 'levelup:svelte-accounts-ui'
+import { LoginWindow } from 'meteor/levelup:svelte-accounts-ui'
 </script>
 
 <LoginWindow />
@@ -18,7 +18,7 @@ import { LoginWindow } from 'levelup:svelte-accounts-ui'
 
 ```js
 <script>
-import { Login, Signup, Logout } from 'levelup:svelte-accounts-ui'
+import { Login, Signup, Logout } from 'meteor/levelup:svelte-accounts-ui'
 </script>
 
 <Signup heading="Create User" />
